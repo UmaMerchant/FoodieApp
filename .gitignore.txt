@@ -1,0 +1,25 @@
+# Node modules & build
+frontend/node_modules/
+frontend/build/
+frontend/.env
+
+# Java - Spring Boot
+backend/target/
+backend/.classpath
+backend/.project
+backend/*.iml
+backend/.settings/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# OS generated
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Misc
+code-snippets/
