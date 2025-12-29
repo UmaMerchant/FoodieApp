@@ -1,136 +1,146 @@
-﻿# 🍽️ FoodiiApp – Full Stack Online Food Ordering System
+🍽️ FoodiiApp – Full Stack Online Food Ordering System
+📌 Overview
 
-## 📌 Overview
-**FoodiiApp** is a full-stack food delivery platform inspired by Zomato and Swiggy. It supports four types of users:
+FoodiiApp is a scalable full-stack online food ordering platform designed for modern food businesses.
+It supports multiple user roles and provides a complete workflow from restaurant onboarding to order management and payments.
 
-- 🧑‍💻 **Guest Users** – Browse and explore restaurants
-- 👤 **Registered Users** – Place and track orders
-- 👨‍🍳 **Restaurant Owners** – Manage restaurants and food items
-- 🛡️ **Admin** – Approve new restaurant registrations and control platform access
+The application is built with a clean separation of frontend and backend, making it easy to customize, extend, and deploy for different business needs.
 
----
+👥 User Roles & Capabilities
+🧑‍💻 Guest Users
 
-## 🛠️ Tech Stack
+Browse and explore available restaurants
 
-| Layer      | Technology             |
-|------------|------------------------|
-| Frontend   | React, Material UI     |
-| Backend    | Spring Boot (Java)     |
-| Database   | MongoDB                |
-| Payment    | Razorpay (Test Mode)   |
-| Auth       | JWT + Local Storage    |
+Search, sort, and filter restaurants by cuisine
 
----
+View static pages like About Us and Contact
 
-## ✨ Key Features
+👤 Registered Users
 
-### 👤 Guest Portal
-- View all available restaurants
-- Search, sort, and filter by cuisine
-- Browse About Us and Contact pages
+Register and log in securely
 
-### 🔐 User Portal
-- Register and login
-- Add items to cart and place orders
-- Make payments via Razorpay (test mode)
-- View and track order history
+Add food items to cart and place orders
 
-### 👨‍🍳 Restaurant Owner Portal
-- Login with role-based access
-- Add/edit own restaurants
-- Add, edit, delete food items
-- Approve or reject user orders
+Make payments using Razorpay (test mode)
 
-### 🛡️ Admin Portal
-- Approve/reject restaurant owner signup requests
-- Enable or disable restaurants
-- View all users and restaurants
+Track order history and order status
 
----
+👨‍🍳 Restaurant Owners
 
-## 📂 Folder Structure
+Role-based secure login
 
-```
+Add and manage their own restaurants
+
+Add, edit, or delete food items
+
+Accept or reject incoming orders
+
+🛡️ Admin
+
+Approve or reject restaurant owner registrations
+
+Enable or disable restaurants
+
+View and manage all users and restaurants
+
+🛠️ Tech Stack
+Layer	Technology
+Frontend	React, Material UI
+Backend	Spring Boot (Java)
+Database	MongoDB
+Payments	Razorpay (Test Mode)
+Auth	JWT + Local Storage
+✨ Key Features
+
+Role-based authentication and authorization
+
+Modular REST APIs with Spring Boot
+
+Secure JWT-based login system
+
+Payment gateway integration (Razorpay – test mode)
+
+Responsive and user-friendly UI
+
+Scalable architecture suitable for startups and SaaS products
+
+💡 Use Cases
+
+Online food ordering startups
+
+Restaurant chain management systems
+
+Cloud kitchen platforms
+
+College or office cafeteria ordering systems
+
+Custom food delivery solutions for local businesses
+
+📂 Folder Structure
 FoodiiApp/
-├── frontend/             # React frontend app
-├── backend/              # Spring Boot backend app
-├── screenshots/          # UI screenshots (for documentation only)
-├── code-snippets/        # Code screenshots (for viva/report only)
+├── frontend/             # React frontend application
+├── backend/              # Spring Boot backend application
+├── screenshots/          # UI screenshots (documentation only)
 ├── .gitignore
 └── README.md
-```
 
-## 📸 UI Screenshots
 
-| Screen                       | Filename                                      |
-|-----------------------------|-----------------------------------------------|
-| Home Page (Guest)           | `screenshots/01_HomePage_Guest.png`           |
-| Sign Up Page                | `screenshots/02_SignUpPage.png`               |
-| Login Page                  | `screenshots/03_LoginPage.png`                |
-| About Us Page               | `screenshots/04_AboutUsPage.png`              |
-| Contact Us Page             | `screenshots/05_ContactUsPage.png`            |
-| User Dashboard              | `screenshots/06_UserDashboard_Restaurants.png`|
-| Cart View                   | `screenshots/07_UserCartView.png`             |
-| Order History               | `screenshots/08_UserOrderHistory.png`         |
-| Owner Dashboard             | `screenshots/09_OwnerDashboard_Main.png`      |
-| Add New Restaurant          | `screenshots/10_Owner_AddNewRestaurant.png`   |
-| Admin Dashboard             | `screenshots/11_AdminDashboard_Main.png`      |
-| Approved Restaurants        | `screenshots/12_AdminApprovedRestaurants.png` |
-| Pending Approvals           | `screenshots/13_AdminRestaurantApprovalQueue.png`|
+⚠️ Note:
+Any non-production folders (like internal notes or snippets) are excluded to keep the repository clean and deployment-ready.
 
----
-
-## 🚀 Running the App
-
-### 🔧 Backend – Spring Boot
-
-```bash
-# Step into backend folder
+📸 UI Screenshots
+Screen	Filename
+Home Page (Guest)	screenshots/01_HomePage_Guest.png
+Sign Up Page	screenshots/02_SignUpPage.png
+Login Page	screenshots/03_LoginPage.png
+About Us Page	screenshots/04_AboutUsPage.png
+Contact Us Page	screenshots/05_ContactUsPage.png
+User Dashboard	screenshots/06_UserDashboard_Restaurants.png
+Cart View	screenshots/07_UserCartView.png
+Order History	screenshots/08_UserOrderHistory.png
+Owner Dashboard	screenshots/09_OwnerDashboard_Main.png
+Add New Restaurant	screenshots/10_Owner_AddNewRestaurant.png
+Admin Dashboard	screenshots/11_AdminDashboard_Main.png
+Approved Restaurants	screenshots/12_AdminApprovedRestaurants.png
+Pending Approvals	screenshots/13_AdminRestaurantApprovalQueue.png
+🚀 Running the Application Locally
+🔧 Backend – Spring Boot
 cd backend
-
-# Run using Maven
 mvn spring-boot:run
-```
 
-📌 Ensure MongoDB is running locally on `mongodb://localhost:27017`.
 
-### 🎨 Frontend – React
+📌 Ensure MongoDB is running locally on:
 
-```bash
-# Step into frontend folder
+mongodb://localhost:27017
+
+🎨 Frontend – React
 cd frontend
-
-# Install dependencies
 npm install
-
-# Start the React app
 npm start
-```
-
-🌐 Frontend will run at: `http://localhost:3000/`
-
----
-
-## 🔐 Test Credentials
-
-| Role    | Email                    | Password   |
-|---------|--------------------------|------------|
-| User    | umamerchant176@gmail.com | uma123     |
-| Owner   | owner4@gmail.com         | owner4     |
-| Admin   | umaadmin@gmail.com       | uma        |
-
----
-
-## 👤 Author
-
-**Uma Merchant**  
-Full Stack Developer – Gen AI Capstone Project  
-[LinkedIn](https://www.linkedin.com/in/uma-merchant-7a516415b)
 
 
----
+🌐 Frontend runs at:
+http://localhost:3000/
 
-## 📄 License
+🔐 Test Credentials (Demo Purpose Only)
+Role	Email	Password
+User	umamerchant176@gmail.com
+	uma123
+Owner	owner4@gmail.com
+	owner4
+Admin	umaadmin@gmail.com
+	uma
+👤 Author
 
-This project was developed as part of NIIT's Full Stack Developer with Gen AI Program.
+Uma Merchant
+Full Stack Developer
+📌 Open to freelance and project-based opportunities
+🔗 LinkedIn: www.linkedin.com/in/uma-merchant-7a516415b
 
+📄 License
+
+This project was originally developed as part of a full-stack development program and is now maintained as a portfolio and demonstration project.
+
+📄 License
+
+This project was originally developed as part of a full-stack development program and is now maintained as a portfolio and demonstration project.
